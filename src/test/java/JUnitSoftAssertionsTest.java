@@ -55,12 +55,12 @@ public class JUnitSoftAssertionsTest {
                   void test() {
                     Configuration.assertionMode = SOFT;
                     open("page.html");
-                                
+                               \s
                     $("#first").should(visible).click();
                     $("#second").should(visible).click();
                   }
                 }
-                """.trim();
+               \s""".trim();
         $(".markdown-body").shouldHave(text(jUnitFiveExample));
     }
 }
